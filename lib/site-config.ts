@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Alex Morgan",
+  name: "Jane Doe",
   tagline: "Landscape & portrait photography",
-  email: "hello@alexmorganphoto.com",
+  email: "bigdata@example.com",
   description:
     "Pacific Northwest photographer specializing in landscape and portrait photography with natural light and honest composition.",
 }
