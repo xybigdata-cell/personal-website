@@ -1,3 +1,5 @@
+import { siteConfig } from "@/lib/site-config"
+
 export function Contact() {
   return (
     <section id="contact" className="bg-secondary py-24 md:py-32">
@@ -9,10 +11,10 @@ export function Contact() {
           Available for commissioned work and collaborations.
         </p>
         <a
-          href="mailto:hello@alexmorganphoto.com"
+          href={`mailto:${siteConfig.email}`}
           className="mt-8 inline-block border border-foreground px-8 py-3 text-sm tracking-wide transition-colors hover:bg-foreground hover:text-background"
         >
-          hello@alexmorganphoto.com
+          {siteConfig.email}
         </a>
       </div>
     </section>

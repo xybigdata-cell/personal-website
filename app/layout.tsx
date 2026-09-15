@@ -3,6 +3,12 @@ import { Geist, Geist_Mono, Lora } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata = {
+  title: `${siteConfig.name} — ${siteConfig.tagline}`,
+  description: siteConfig.description,
+}
 
 const fontSans = Geist({
   subsets: ["latin"],

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
+import { siteConfig } from "@/lib/site-config"
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -33,7 +34,7 @@ export function Header() {
           href="#"
           className="font-serif text-lg tracking-tight"
         >
-          Alex Morgan
+          {siteConfig.name}
         </a>
         <ul className="flex gap-8 text-sm text-muted-foreground">
           {navLinks.map((link) => (

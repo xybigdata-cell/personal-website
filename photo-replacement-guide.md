@@ -20,6 +20,7 @@ Replace the placeholder images below with your own photographs before publishing
 - Replace the photographer name and tagline in `components/hero.tsx` and `components/header.tsx`
 - Update the about copy in `components/about.tsx` to reflect your actual story and specialty
 - Adjust pricing and package names in `components/pricing.tsx` to match your actual rates
+- When replacing portfolio images, give each one a descriptive `alt` attribute (e.g., `alt="Mountain landscape at sunset, Olympic National Park"`) instead of leaving it empty
 
 ## Current Placeholders
 
