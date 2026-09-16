@@ -16,8 +16,8 @@ Replace the placeholder images below with your own photographs before publishing
 - The about image should be portrait-oriented (taller than wide)
 - The portfolio grid has 3 columns on desktop; the first and fourth slots span 2 rows — put your strongest vertical images there
 - All images load with `loading="lazy"` except the hero
-- Replace the email address in `components/contact.tsx`
-- Replace the photographer name and tagline in `components/hero.tsx` and `components/header.tsx`
+- Replace the email address, photographer name, and tagline in `lib/site-config.ts` — the single source of truth for these values; edit them there, not in the components
+- Components only read from it: `siteConfig.email` in `components/contact.tsx`, `siteConfig.name` in `components/header.tsx` and `components/hero.tsx`, and `siteConfig.name` / `siteConfig.tagline` in `app/layout.tsx`
 - Update the about copy in `components/about.tsx` to reflect your actual story and specialty
 - Adjust pricing and package names in `components/pricing.tsx` to match your actual rates
 - When replacing portfolio images, give each one a descriptive `alt` attribute (e.g., `alt="Mountain landscape at sunset, Olympic National Park"`) instead of leaving it empty
